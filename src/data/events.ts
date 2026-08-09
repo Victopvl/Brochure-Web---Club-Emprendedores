@@ -110,17 +110,15 @@ export const events: ClubEvent[] = [
   },
 
     {
-    slug: "pitch-night-ronda-de-apertura",
-    title: "Pitch Night — Ronda de apertura",
+    slug: "pitch-night-ronda-de-apertura", //Cambié la información de este evento, pero no sé que hacer con slug//
+    title: "Emprender bajo incertidumbre",
     status: "upcoming",
-    date: "2026-09-12",
-    time: "18:30 hrs",
-    location: "Auditorio, Campus Casona",
-    excerpt: "Jurado invitado por confirmar",
+    date: "2026-08-21",
+    time: "horario por confirmar",
+    location: "Campus Casona",
+    excerpt: "x",
     body: [
-      "Abrimos el semestre con la primera pitch night. Cinco minutos por equipo para presentar en qué están trabajando y tres para responder al jurado.",
-      "Pueden presentar miembros nuevos y antiguos. No se necesita un producto terminado: se puede pitchear una idea en etapa temprana siempre que llegues con el problema bien planteado.",
-      "Los cupos para presentar se confirman la semana anterior. Si solo quieres venir a mirar, la entrada es libre.",
+      "El objetivo de esta actividad es activar mentalidad emprendedora y dar el primer paso para levantar tu StartUp o tu Emprendimiento"
     ],
   },
   {
