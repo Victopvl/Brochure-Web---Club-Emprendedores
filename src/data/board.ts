@@ -6,6 +6,7 @@ export const board: BoardMember[] = [
     role: "Director Ejecutivo & Founder",
     email: "presidencia@unab.cl",
     linkedinUrl: "https://www.linkedin.com/",
+    photo: "/board/Pablo.jpeg",
   },
   {
     name: "Santiago Torrealba",
