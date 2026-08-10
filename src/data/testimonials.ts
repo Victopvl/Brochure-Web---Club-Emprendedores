@@ -4,7 +4,7 @@ import type { Testimonial } from "../types/content.ts";
 export const testimonials: Testimonial[] = [
   {
     quote:
-      "Entré sin idea y salí con un socio y un prototipo. La diferencia fue tener personas al lado empujando cada semana.",
+      "Entré sin idea y salí con un socio y un prototipo. La diferencia fue tener gente al lado empujando cada semana.",
     name: "Nombre Apellido",
     career: "Ingeniería Comercial",
   },
