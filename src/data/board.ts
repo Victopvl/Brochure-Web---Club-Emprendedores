@@ -4,8 +4,8 @@ export const board: BoardMember[] = [
   {
     name: "Pablo Andrés Salazar Chavéz",
     role: "Director Ejecutivo & Founder",
-    email: "presidencia@unab.cl",
-    linkedinUrl: "https://www.linkedin.com/",
+    email: "pablo.salazrs@gmail.com",
+    linkedinUrl: "linkedin.com/in/pablo-andrés-salazar-chávez-322a052b8",
     photo: "/board/Pablo.jpeg",
   },
   {
@@ -17,8 +17,8 @@ export const board: BoardMember[] = [
   {
     name: "Martín Abel García Recabarren",
     role: "Director de Actividades",
-    email: "proyectos@unab.cl",
-    linkedinUrl: "https://www.linkedin.com/",
+    email: "M.garcarecabarren@uandresbello.edu",
+    linkedinUrl: "https://www.linkedin.com/in/martin-abel-garcia-recabarren-21666t08?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
   },
   {
     name: "Sebastián Ramirez",
@@ -48,8 +48,8 @@ export const board: BoardMember[] = [
   {
     name: "Victoria Vallejos",
     role: "Dirección de Marketing / Dirección de Desarrollo Digital",
-    email: "alianzas@unab.cl",
-    linkedinUrl: "https://www.linkedin.com/",
+    email: "Victoriapaz.sa@gmail.com",
+    linkedinUrl: "https://www.linkedin.com/in/victopvl?utm_source=share_via&utm_content=profile&utm_medium=member_android",
     photo: "board/Victoria.jpeg",
   },
   {
