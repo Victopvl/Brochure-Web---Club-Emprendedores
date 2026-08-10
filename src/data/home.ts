@@ -20,10 +20,10 @@ export const hero = {
 };
 
 export const stats: Stat[] = [
-  { value: "+120", label: "Miembros activos" },
-  { value: "18", label: "Eventos al año" },
-  { value: "9", label: "Proyectos lanzados" },
-  { value: "14", label: "Carreras representadas" },
+  { value: "66", label: "Seguidores activos" },
+  { value: "3", label: "Actividades ejecutadas" },
+  { value: "$350.000", label: "Fondos IMPULSA UNAB" },
+  { value: "11", label: "Clubes aliados" },
 ];
 
 export const about = {

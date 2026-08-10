@@ -1,5 +1,6 @@
 import type { Testimonial } from "../types/content.ts";
 
+//Remplazar todos con testimonios reales//
 export const testimonials: Testimonial[] = [
   {
     quote:

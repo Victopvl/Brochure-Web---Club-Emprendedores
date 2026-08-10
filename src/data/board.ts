@@ -10,7 +10,7 @@ export const board: BoardMember[] = [
   },
   {
     name: "Santiago Torrealba",
-    role: "Precidencia / Coordinación",
+    role: "Presidencia / Coordinación",
     email: "vicepresidencia@unab.cl",
     linkedinUrl: "https://www.linkedin.com/",
   },
@@ -22,7 +22,7 @@ export const board: BoardMember[] = [
   },
   {
     name: "Sebastián Ramirez",
-    role: "Directora de Vinculación con el Medio",
+    role: "Director de Vinculación con el Medio",
     email: "comunicaciones@unab.cl",
     linkedinUrl: "https://www.linkedin.com/",
   },
