@@ -72,7 +72,7 @@ export const events: ClubEvent[] = [
     instagramUrl: "https://www.instagram.com/clubemprendedoresunab/",
     body: [
       "Fuimos a las oficinas de una startup chilena en etapa de crecimiento para ver cómo se ve un equipo por dentro cuando ya pasó la etapa de la idea.",
-      "Recorrimos las áreas de producto, ventas y operaciones, y conversamos con gente que hace cinco años estaba sentada donde estamos nosotros.",
+      "Recorrimos las áreas de producto, ventas y operaciones, y conversamos con personas que hace cinco años estaban sentadas donde estamos nosotros.",
       "La conclusión compartida al salir: se ve mucho menos glamoroso y mucho más alcanzable de lo que uno imagina.",
     ],
   },

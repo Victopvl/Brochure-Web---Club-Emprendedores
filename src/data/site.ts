@@ -9,7 +9,7 @@ export const club = {
 };
 
 export const nav: NavItem[] = [
-  { label: "Nosotros", sectionId: "quienes-somos" },
+  { label: "Sobre nosotros", sectionId: "quienes-somos" },
   { label: "Beneficios", sectionId: "beneficios" },
   { label: "Directiva", sectionId: "directiva" },
   { label: "Eventos", sectionId: "eventos" },
