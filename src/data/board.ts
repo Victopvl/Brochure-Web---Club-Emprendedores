@@ -31,6 +31,7 @@ export const board: BoardMember[] = [
     role: "Secretaría / Coordinación Documental",
     email: "finanzas@unab.cl",
     linkedinUrl: "https://www.linkedin.com/",
+    photo: "board/Benja.jpeg",
   },
   {
     name: "Ignacio Karlezi",
@@ -49,6 +50,7 @@ export const board: BoardMember[] = [
     role: "Dirección de Marketing / Dirección de Desarrollo Digital",
     email: "alianzas@unab.cl",
     linkedinUrl: "https://www.linkedin.com/",
+    photo: "board/Victoria.jpeg",
   },
   {
     name: "Kiana Kaltennegger",
