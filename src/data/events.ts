@@ -4,18 +4,16 @@ import { sortByDateAsc, sortByDateDesc } from "../lib/date.ts";
 export const events: ClubEvent[] = [
   {
     slug: "demo-day-2025",
-    title: "Demo Day 2025",
+    title: "Visita a Bloomberg Chile",
     status: "past",
-    date: "2025-11-08",
-    time: "19:00 hrs",
-    location: "Auditorio, Campus Casona",
-    excerpt: "Nueve equipos presentando el cierre del semestre ante sala llena.",
+    date: "2025-04-24",
+    time: "15:00 - 16:00 hrs",
+    location: "Apoquindo 2827",
+    excerpt: "Bloomberg L.P es una empresa líder mundial en tecnología, datos financieros, noticias y medios de comnunicación.",
     featured: true,
     instagramUrl: "https://www.instagram.com/clubemprendedoresunab/",
     body: [
-      "El Demo Day cerró el segundo semestre con nueve equipos presentando frente a una sala llena. Cada uno tuvo cinco minutos para mostrar en qué estuvo trabajando y tres para responder preguntas del jurado.",
-      "Pasaron por el escenario proyectos de logística, salud mental, agrotech y dos aplicaciones que partieron como tarea de un ramo. El jurado lo formaron egresados UNAB, una inversionista ángel y dos profesores de la Facultad de Ingeniería.",
-      "No hubo primer lugar. La idea del Demo Day no es competir sino dejar constancia de lo que se avanzó en el semestre, y varios equipos salieron con reuniones agendadas para la semana siguiente.",
+      "Junto a los miembros del Club vivimos una experiencia memorable visitando las oficinas de Bloomberg Chile, contamos con más de 30 asistentes que se animaron a conocer el núclo de esta gran empresa, el cual es conectar a quienes toman desiciones en el sector financiero con una red dinámica de información, pesonas e ideas, proporcionando análisis precisos y en tiempo real.",
     ],
   },
   {
@@ -34,7 +32,7 @@ export const events: ClubEvent[] = [
     ],
   },
   {
-    slug: "charla-invitado",
+    slug: "charla-invitado", //OCULTAR//
     title: "Charla invitado",
     status: "past",
     date: "2026-05-07",
@@ -49,7 +47,7 @@ export const events: ClubEvent[] = [
     ],
   },
   {
-    slug: "pitch-night-otono",
+    slug: "pitch-night-otono", //OCULTAR//
     title: "Pitch Night",
     status: "past",
     date: "2026-05-21",
@@ -64,7 +62,7 @@ export const events: ClubEvent[] = [
     ],
   },
   {
-    slug: "visita-a-startup",
+    slug: "visita-a-startup",//OCULTAR//
     title: "Visita a startup",
     status: "past",
     date: "2026-06-04",
@@ -79,7 +77,7 @@ export const events: ClubEvent[] = [
     ],
   },
   {
-    slug: "asado-del-club",
+    slug: "asado-del-club", //OCULTAR//
     title: "Asado del club",
     status: "past",
     date: "2026-06-18",
@@ -94,7 +92,7 @@ export const events: ClubEvent[] = [
     ],
   },
   {
-    slug: "feria-de-proyectos",
+    slug: "feria-de-proyectos", //OCULTAR//
     title: "Feria de proyectos",
     status: "past",
     date: "2026-07-02",
@@ -116,54 +114,50 @@ export const events: ClubEvent[] = [
     date: "2026-08-21",
     time: "horario por confirmar",
     location: "Campus Casona",
-    excerpt: "x",
-    body: [
-      "El objetivo de esta actividad es activar mentalidad emprendedora y dar el primer paso para levantar tu StartUp o tu Emprendimiento"
-    ],
-  },
-  {
-    slug: "taller-valida-tu-idea-en-7-dias",
-    title: "Taller: valida tu idea en 7 días",
-    status: "upcoming",
-    date: "2026-09-26",
-    time: "17:00 hrs",
-    location: "Sala por confirmar",
     excerpt: "Expositor por confirmar",
     body: [
-      "Un taller práctico para salir con un plan de validación de una semana, no con teoría.",
-      "Vas a armar tu guion de entrevista, definir a quién contactar y salir con la tarea de tener conversaciones reales antes del siguiente encuentro.",
-      "Trae una idea, aunque sea vaga. Se trabaja sobre casos de los propios asistentes.",
+      "El objetivo de esta actividad es activar mentalidad emprendedora y dar el primer paso para levantar tu StartUp o tu Emprendimiento."
     ],
   },
   {
-    slug: "charla-de-la-tesis-a-la-startup",
-    title: "Charla: de la tesis a la startup",
+    slug: "taller-valida-tu-idea-en-7-dias", //Cambié la información de este evento, pero no sé que hacer con slug//
+    title: "El poder del networking",
     status: "upcoming",
-    date: "2026-10-10",
-    time: "18:00 hrs",
-    location: "Campus República",
+    date: "2026-09-25",
+    time: "Horario por confirmar",
+    location: "Unab Bellavista",
+    excerpt: "Expositor por confirmar", 
+    body: [
+      "El objetivo de esta actividad es construir relaciones, crear un mapa de contactos y seguimiento.",
+    ],
+  },
+  {
+    slug: "charla-de-la-tesis-a-la-startup", //Cambié la información de este evento, pero no sé que hacer con slug//
+    title: "Marketing Digital e IA aplicada",
+    status: "upcoming",
+    date: "2026-10-30",
+    time: "Horario por confirmar",
+    location: "Campus Los Leones",
     excerpt: "Egresado UNAB por confirmar",
     body: [
-      "Un egresado UNAB que convirtió su proyecto de título en una empresa vendrá a contar cómo fue ese salto.",
-      "Vamos a cubrir qué se puede reutilizar de un trabajo académico, qué hay que botar y cómo se financian los primeros meses cuando todavía no hay ingresos.",
-      "Al final habrá espacio de preguntas abiertas.",
+      "El objetivo de esta actividad es aplicar marketing digital e IA, de manera responsable a proyectos tempranos.",
     ],
   },
   {
-    slug: "demo-day-del-semestre",
-    title: "Demo Day del semestre",
+    slug: "demo-day-del-semestre", //Cambié la información de este evento, pero no sé que hacer con slug//
+    title: "Estrategia y Modelo de Negocio",
     status: "upcoming",
-    date: "2026-11-07",
-    time: "19:00 hrs",
-    location: "Lugar por confirmar",
-    excerpt: "Proyectos de los miembros",
+    date: "2026-11-27",
+    time: "Horario por confirmar",
+    location: "Cede por confirmar",
+    excerpt: "Conoce los proyectos de los miembros",
     body: [
-      "El cierre del semestre. Los equipos que trabajaron durante estos meses presentan lo que lograron avanzar.",
-      "Es una instancia abierta: vienen egresados, profesores, gente de la industria y estudiantes que están evaluando entrar al club.",
-      "Si estás en un proyecto del club, esta es la fecha para la que hay que trabajar.",
+      "El objetivo de esta actividad es profundizar en la validación, estrategia, propuesta de valor y continuidad de proyectos estudiantiles.",
     ],
   },
 ];
+
+//Agregar UNAB Emprende Summit 2026//
 
 export const pastEvents = events
   .filter((event) => event.status === "past")
