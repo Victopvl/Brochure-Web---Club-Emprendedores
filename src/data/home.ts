@@ -34,14 +34,14 @@ export const about = {
   imageAlt:
     "Miembros del Club de Emprendedores UNAB durante una visita a la sala Bloomberg",
   mission:
-    "Darle a cada estudiante UNAB las herramientas, la red y el empujón para convertir una idea en algo real.",
+    "Ser el puente entre el aula y el mundo real: conectar a estudiantes de la UNAB con empresas, inversionistas y fundadores que puedan ayudarlos a conectar sus ideas en proyectos reales.",
   vision:
     "Ser el semillero de emprendimiento universitario más activo de Chile.",
   values: [
-    "Ejecutar antes que teorizar",
-    "Comunidad sobre competencia",
-    "Curiosidad sin prejuicios",
-    "Fallar rápido, contarlo mejor",
+    "Audacia y Comunidad",
+    "Acción y Acceso",
+    "Aprendizaje práctico",
+    "Compromiso estudiantil",
   ],
 };
 
