@@ -19,12 +19,14 @@ export const board: BoardMember[] = [
     role: "Director de Actividades",
     email: "M.garcarecabarren@uandresbello.edu",
     linkedinUrl: "https://www.linkedin.com/in/martin-abel-garcia-recabarren-21666t08?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
+    photo: "board/Martin.jpeg",
   },
   {
     name: "Sebastián Ramirez",
     role: "Director de Vinculación con el Medio",
     email: "comunicaciones@unab.cl",
     linkedinUrl: "https://www.linkedin.com/",
+    photo: "board/Sebastian.jpeg",
   },
   {
     name: "Benja Bahamondes",
@@ -36,14 +38,16 @@ export const board: BoardMember[] = [
   {
     name: "Ignacio Karlezi",
     role: "Vocería Estudiantil / Coordinación",
-    email: "alianzas@unab.cl",
+    email: "i.karlezivalenzuela@uandresbello.edu",
     linkedinUrl: "https://www.linkedin.com/",
+    photo: "board/Ignacio.jpeg",
   },
   {
     name: "Alonso Silva",
     role: "Liderazgo Operativo de Marketing",
     email: "alianzas@unab.cl",
     linkedinUrl: "https://www.linkedin.com/",
+    photo: "board/Alonso.jpeg",
   },
   {
     name: "Victoria Vallejos",
@@ -57,11 +61,13 @@ export const board: BoardMember[] = [
     role: "Tesorera",
     email: "alianzas@unab.cl",
     linkedinUrl: "https://www.linkedin.com/",
+    photo: "board/Kiana.jpeg",
   },
   {
     name: "Cristobal Villablanca",
     role: "Creatividad y Contenidos",
     email: "alianzas@unab.cl",
     linkedinUrl: "https://www.linkedin.com/",
+    photo: "board/Cristobal.jpeg",
   },
 ];
