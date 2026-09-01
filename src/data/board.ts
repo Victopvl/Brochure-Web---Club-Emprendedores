@@ -13,6 +13,7 @@ export const board: BoardMember[] = [
     role: "Presidencia / Coordinación",
     email: "vicepresidencia@unab.cl",
     linkedinUrl: "https://www.linkedin.com/",
+    photo: "board/Santiago.jpeg",
   },
   {
     name: "Martín Abel García Recabarren",
