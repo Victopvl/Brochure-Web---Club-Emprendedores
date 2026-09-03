@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import { UnabWatermark } from "../brand/UnabWatermark.tsx";
 import { Icon } from "../ui/Icon.tsx";
 import { ImagePlaceholder } from "../ui/ImagePlaceholder.tsx";
@@ -7,6 +8,24 @@ import { board } from "../../data/board.ts";
 import { container, cx } from "../../lib/ui.ts";
 
 export function Board() {
+  const trackRef = useRef<HTMLUListElement>(null);
+
+  function scrollByMember(direction: 1 | -1) {
+    const track = trackRef.current;
+    const card = track?.querySelector("li");
+    if (!track || !card) return;
+
+    const gap = Number.parseFloat(getComputedStyle(track).columnGap) || 0;
+    const step = card.getBoundingClientRect().width + gap;
+    const maxScroll = track.scrollWidth - track.clientWidth;
+    const next = track.scrollLeft + step * direction;
+
+    track.scrollTo({
+      left: next < 0 ? maxScroll : next > maxScroll + 1 ? 0 : next,
+      behavior: "smooth",
+    });
+  }
+
   return (
     <section
       id="directiva"
@@ -24,16 +43,43 @@ export function Board() {
             </h2>
           </Reveal>
           <Reveal delay={0.08}>
-            <p className="text-sm leading-relaxed text-muted-dark">
-              Escríbeles directo. Todos responden, incluso en semana de
-              certámenes.
-            </p>
+            <div className="flex items-end justify-between gap-5">
+              <p className="max-w-sm text-sm leading-relaxed text-muted-dark">
+                Escríbeles directo. Todos responden, incluso en semana de
+                certámenes.
+              </p>
+              <div className="flex shrink-0 gap-3">
+                <button
+                  type="button"
+                  onClick={() => scrollByMember(-1)}
+                  aria-label="Integrante anterior"
+                  className="flex h-11 w-11 items-center justify-center rounded-full border border-white/25 text-white transition-colors hover:bg-white hover:text-unab-navy"
+                >
+                  <Icon name="arrow-left-icon" className="h-4 w-4" />
+                </button>
+                <button
+                  type="button"
+                  onClick={() => scrollByMember(1)}
+                  aria-label="Integrante siguiente"
+                  className="flex h-11 w-11 items-center justify-center rounded-full border border-white/25 text-white transition-colors hover:bg-white hover:text-unab-navy"
+                >
+                  <Icon name="arrow-right-icon" className="h-4 w-4" />
+                </button>
+              </div>
+            </div>
           </Reveal>
         </div>
 
-        <ul className="mt-14 grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
+        <ul
+          ref={trackRef}
+          aria-label="Integrantes de la directiva"
+          className="mt-14 flex snap-x snap-mandatory gap-5 overflow-x-auto pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+        >
           {board.map((member, index) => (
-            <li key={member.role}>
+            <li
+              key={member.name}
+              className="w-[82%] shrink-0 snap-start sm:w-[calc((100%-1.25rem)/2)] lg:w-[calc((100%-2.5rem)/3)] xl:w-[calc((100%-3.75rem)/4)]"
+            >
               <Reveal delay={index * 0.05} className="h-full">
                 <article className="flex h-full flex-col overflow-hidden rounded-2xl bg-white">
                   <div className="relative">
@@ -58,12 +104,14 @@ export function Board() {
                   </div>
 
                   <div className="flex flex-1 flex-col p-5">
-                    <h3 className="text-base font-bold tracking-tight text-unab-navy">
+                    <h3 className="min-h-12 text-base font-bold tracking-tight text-unab-navy">
                       {member.name}
                     </h3>
-                    <p className="mt-1 text-sm text-muted">{member.role}</p>
+                    <p className="mt-1 min-h-[3.75rem] text-sm leading-5 text-muted">
+                      {member.role}
+                    </p>
 
-                    <div className="mt-5 flex items-center gap-2">
+                    <div className="mt-auto flex items-center gap-2 pt-5">
                       <a
                         href={`mailto:${member.email}`}
                         className="inline-flex flex-1 items-center justify-center gap-2 rounded-full bg-unab-navy px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-unab-navy-deep"
